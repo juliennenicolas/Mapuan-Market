@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · Mapúan Marketplace</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-nav></div>
+  <main class="page-shell">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <div class="eyebrow">Admin controls</div>
+          <h1>Moderation</h1>
+          <p class="muted">Manage users and remove inappropriate listings.</p>
+        </div>
+      </div>
+
+      <div class="category-grid" id="statGrid" style="grid-template-columns:repeat(3,1fr);margin-bottom:24px"></div>
+
+      <div class="panel" style="margin-bottom:24px">
+        <h2>Users</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="usersBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Listings</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Title</th><th>Seller</th><th>Price</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="listingsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="container">Mapúan Marketplace · Built for safer campus peer-to-peer commerce.</div>
+</footer>
+
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse · Mapúan Marketplace</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-nav></div>
+  <main class="page-shell">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <div class="eyebrow">Marketplace</div>
+          <h1>Find what you need.</h1>
+          <p class="muted" id="resultCount">Loading listings…</p>
+        </div>
+        <a class="btn btn-primary" href="./sell.html">+ Sell an item</a>
+      </div>
+
+      <form class="filters" id="filters">
+        <input class="input" name="q" placeholder="Search books, calculators, uniforms…">
+        <select class="select" name="category" id="categoryFilter"></select>
+        <select class="select" name="campus">
+          <option value="">Any campus</option>
+          <option>Intramuros Campus</option>
+          <option>Makati Campus</option>
+        </select>
+        <select class="select" name="condition">
+          <option value="">Any condition</option>
+          <option>New</option>
+          <option>Like New</option>
+          <option>Good</option>
+          <option>Fair</option>
+          <option>Worn</option>
+        </select>
+        <select class="select" name="sort">
+          <option value="">Newest</option>
+          <option value="price_asc">Price: low to high</option>
+          <option value="price_desc">Price: high to low</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </form>
+
+      <div class="listing-grid" id="listingGrid"></div>
+    </div>
+  </main>
+
+
+<footer class="footer">
+  <div class="container">Mapúan Marketplace · Built for safer campus peer-to-peer commerce.</div>
+</footer>
+
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/browse.js"></script>
+</body>
+</html>

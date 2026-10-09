@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register · Mapúan Marketplace</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-nav></div>
+  <main class="auth-wrap">
+    <section class="auth-visual">
+      <div class="eyebrow" style="width:max-content;background:white">Verified Mapúa students</div>
+      <h1>Your unused school stuff could be somebody else’s next requirement.</h1>
+      <p style="max-width:560px">Create a student account and start buying or selling inside the Mapúa community.</p>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-box">
+        <h2>Create your account.</h2>
+        <p class="muted">Only @mymail.mapua.edu.ph addresses are accepted.</p>
+
+        <form id="registerForm" style="display:grid;gap:14px;margin-top:24px">
+          <div class="form-group">
+            <label>Full name</label>
+            <input class="input" name="fullName" required>
+          </div>
+
+          <div class="form-group">
+            <label>Mapúa email</label>
+            <input class="input" type="email" name="email" required placeholder="student@mymail.mapua.edu.ph">
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input class="input" type="password" name="password" minlength="8" required>
+          </div>
+
+          <div class="form-group">
+            <label>Campus</label>
+            <select class="select" name="campus">
+              <option>Intramuros Campus</option>
+              <option>Makati Campus</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Course</label>
+            <input class="input" name="course" placeholder="e.g. BSIT">
+          </div>
+
+          <button class="btn btn-primary" type="submit">Create account</button>
+        </form>
+
+        <p class="muted" style="margin-top:18px">
+          Already registered? <a href="./login.html" style="color:var(--red);font-weight:800">Log in</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/auth-pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages · Mapúan Marketplace</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-nav></div>
+  <main class="page-shell">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <div class="eyebrow">Inbox</div>
+          <h1>Messages</h1>
+          <p class="muted">Talk with buyers and sellers before meeting on campus.</p>
+        </div>
+      </div>
+
+      <div class="messages-layout">
+        <aside class="thread-list" id="threadList"></aside>
+        <section class="chat-pane">
+          <div class="chat-head" id="chatHead">Select a conversation</div>
+          <div class="chat-messages" id="chatMessages"></div>
+          <form class="chat-compose" id="compose" style="display:none">
+            <input class="input" id="messageInput" maxlength="2000" placeholder="Type a message…">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="container">Mapúan Marketplace · Built for safer campus peer-to-peer commerce.</div>
+</footer>
+
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/messages.js"></script>
+</body>
+</html>
